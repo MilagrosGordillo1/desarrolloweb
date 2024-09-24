@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <h1>K.S.</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#SobreMi">Sobre mí</a></li>
+                <li><a href="#Proyectos">Proyectos</a></li>
+                <li><a href="Curriculum vitae Katherina Steinbrecher.pdf"
+                        download="Curriculum Katherina Steinbrecher">Curriculum Vitae</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- INICIO-->
+
+    <main>
+        <section id="Inicio">
+            <img src="foto4x4KS.jpg" alt="foto Katherina">
+            <h1>Katherina Steinbrecher</h1>
+        </section>
+
+        <!-- Sobre MI-->
+
+        <section id="Sobre Mi">
+            <h2>Sobre Mi</h2>
+            <p>Soy <b>Analista Técnico Funcional</b>, me desempeño en la gestion de proyectos tecnológicos
+                enfocados en la mejora de sistemas y procesos internos. Actualmente estoy cursando la <b>Licenciatura en
+                    Gestión de Tecnología de la Información</b>, lo que me permite combinar conocimientos académicos con
+                experiencia práctica en mi día a día laboral.
+            </P>
+
+            <h3>Habilidades:</h3>
+            <p>Tengo experiencia y dominio de diversas herramientas tecnológicas, tales como:
+            <ul class="habilidadesTecnicas">
+                <li><i class="fas fa-database"></i> SQL</li>
+                <li><i class="fas fa-code"></i> HTML y CSS</li>
+                <li><i class="fas fa-tasks"></i> JIRA</li>
+                <li><i class="fas fa-chart-bar"></i> POWER BI</li>
+                <li><i class="fas fa-vial"></i> POSTMAN</li>
+            </ul>
+
+            Mi objetivo es continuar desarrollándome en el ámbito de la tecnología, aplicando mis habilidades para
+            aportar soluciones eficientes y escalables.
+            </p>
+        </section>
+
+        <!--PROYECTOS-->
+        <section id="Proyectos"></section>
+        <h2>Proyectos</h2>
+        <p>Actualmente me encuentro incursionando en nuevos proyectos donde poco a poco utilizare este espacio para
+            presentar cada uno de ellos.</p>
+        <div class="proximamente">
+            <i class="fas fa-hourglass-half"></i>
+            <p>Próximamente...</p>
+        </div>
+        </section>
+        <br>
+
+        <!--CONTACTO-->
+        <section id="Contacto">
+            <h2>Contacto</h2>
+            <p>Puedes contactarme enviando un correo electronico a traves de <a
+                    href="correoElectronicoDeContacto"><b>ksteinbrecher@uade.edu.ar</a></b>. O simplemente rellenando
+                con tus datos
+                el siguiente formulario me pondre en contacto contigo.</p>
+
+            <!--Formulario de contacto-->
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br><br>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
+                <br><br>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                <br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
+        <div class="iconos">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/katherina-ayelen-steinbrecher/" target="_blank"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
