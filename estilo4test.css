@@ -29,6 +29,7 @@ header {
     display: flex; /* FLEX PARA ALINEAR LOS ELEMENTOS */
     justify-content: space-between; /* SEPARA EL LOGO DEL RESTO DE ELEMNTOS DE NAV*/
     align-items: center; /* ALINEA VERTICALMENTE */
+    
 }
 
 /* EL LOGO */
@@ -93,6 +94,47 @@ nav a:hover {
     background-color: #61dafb; /* PASAR CURSOR SOBRE LINK */
     border-radius: 5px; /* BORDES DE LOS LINKS */
     text-shadow: none;
+}
+
+@media (max-width: 768px) {
+    /* MUESTRA EL MENU  HAMBURGUESA */
+
+    .navbar-toggler {
+        display: inline-block;
+        margin-left: 60px;
+        
+    }
+    
+    /* CAMBIA EL LAYOUT DE LOS LINKS */
+    .nav-links {
+        display: none; /* OCULTA LOS LINKS INICIALMENTE */
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 50;
+        width: 100%;
+        background-color: #000;
+    }
+    
+    .nav-links a {
+        padding: 15px;
+        margin: 0;
+        border-bottom: 1px solid #fff;
+    }
+    
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+    
+    /* MOSTRAR LOS LINKS CUANDO SE ACTIVA EL MENU BURGER */
+    .nav-links.show {
+        display: flex;
+        margin-left: -20px;
+    }
+
+    .logo {
+        margin-top: -70px;
+    }
 }
 
 /* PRINCIPAL */
