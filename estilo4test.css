@@ -28,9 +28,7 @@ header {
     padding: 20px; /* LA SEPARACIÓN */
     display: flex; /* FLEX PARA ALINEAR LOS ELEMENTOS */
     justify-content: space-between; /* SEPARA EL LOGO DEL RESTO DE ELEMNTOS DE NAV*/
-    align-items: center; /* ALINEA VERTICALMENTE */
-    position: fixed;
-    width: 100%;  
+    align-items: center; /* ALINEA VERTICALMENTE */ 
 }
 
 /* EL LOGO */
