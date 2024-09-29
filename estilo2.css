@@ -131,6 +131,158 @@ section a {
 section a:hover {
     color: #fff;
 }
+
+/* PORTAFOLIO*/
+.tituloportafolio{
+    text-align: center;
+    margin-top: 20px;
+}
+.parrafoportafolio{
+    color: #000;
+    text-align: center;
+    background-color: #D9D9D9;
+    margin-top: 20px;
+    margin-left: 200px ;
+    margin-right: 220px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* CAJAS*/
+.contenedorflex{
+    display: flex;
+    justify-content:space-around;    
+} 
+
+.caja{
+    background-color: #D9D9D9;
+    width: 350px; height: 290px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-right: 220px;
+    flex-wrap: wrap;
+}
+.caja1{
+    background-color: #D9D9D9;
+    width: 350px; height: 290px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-left: 200px ;
+    margin-right: 220px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+/*IMAGEN EN CONSTRUCCION*/
+.Enconstruccion{
+    width: 270px; height: 200px;
+    box-sizing;
+    margin-left: 5px;
+    margin-right: 5px;  
+}
+/*IMAGEN EMPRESA*/
+.Enconstruccion1{
+    width: 270px; height: 200;
+}
+/*TEXTO DENTRO DE LA CAJA*/
+.construccion{
+    color: #000;
+    text-align: center;
+    font-size: small;
+    width: 270px;
+    margin-left: 25px;
+}
+.linkprototipo{
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+/*CAJA TECNOLOGIAS*/
+.cajatecnologias{
+    background-color: #D9D9D9;
+    margin-left: 200px;
+    margin-right: 220px;
+    padding: 20px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Ajuste de las imágenes para que sean responsive */
+.logos {
+    max-width: 100px; 
+    height: auto;
+}
+@media (max-width: 731px) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .logos {
+        flex-basis: calc(50% - 20px); 
+        max-width: 100px;
+    }
+
+}
+
+/* Para resolución de 768px (disposición de logos en una sola fila) */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+/* Para resolución de 400px (disposición en dos columnas: 2x2) */
+@media (max-width: 400px) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .logos {
+        flex-basis: calc(50% - 20px); 
+        max-width: 100px;
+    }
+}
+
+@media all and (max-width: 700px){ 
+    .parrafoportafolio{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 90%;
+        margin-left: 10px;
+    }
+    .contenedorflex{
+        flex-direction: column;
+        justify-content: center;
+        display: block;
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+    .caja1{
+        flex-direction: column;
+        margin-left: 10px;}
+    .construccion{
+        flex-direction: column;
+        width: 90%;
+    }
+    .cajatecnologias{
+        flex-direction: column;
+        width: 90%;
+        margin-left: 10px;
+        padding: 40px;
+        height: 300px;
+        justify-content: center;
+    }
+}
+
 /************************************************************ CONTACTO ****************************************************************************/
  .container {
     display: flex;
