@@ -1,0 +1,836 @@
+/* Estilo general de la pagina - fuente, colores, margenes */
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1; /* Permite que el main ocupe todo el espacio disponible */
+}
+
+body {
+    font-family: Arial;
+    line-height: 1.6;
+    color: #000000;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* ESTILO DEL HEADER DE NAVEGACIÓN */
+header {
+    background-color: #000000;
+    padding: 20px; /* LA SEPARACIÓN */
+    display: flex; /* FLEX PARA ALINEAR LOS ELEMENTOS */
+    justify-content: space-between; /* SEPARA EL LOGO DEL RESTO DE ELEMNTOS DE NAV*/
+    align-items: center; /* ALINEA VERTICALMENTE */
+}
+
+/* EL LOGO */
+header .logo {
+    height: 100px; /* TAMAÑO */
+    width: auto; /* MANTIENE LA PROPORCION */
+    margin-right: 350px; /* ESPACIO ENTRE EL LOGO Y NAV*/
+}
+
+/* ESTILO DEL NAV */
+nav {
+    display: flex; /* ALINEA LOS ELEMENTOS DENTRO DEL NAV */
+    justify-content: center; /* CENTRAR LOS ENLACES */
+    align-items: center;
+}
+
+.listaNav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.linkNav {
+    display: flex;
+    list-style-type: none;
+    justify-content:flex-end;
+    margin: 0 50px;
+}
+
+/*ENLACES*/
+
+nav a {
+    color: #fff; 
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* CONTORNO ENLACES */
+}
+
+nav a:hover {
+    background-color: #61dafb; /* PASAR CURSOR SOBRE LINK */
+    border-radius: 5px; /* BORDES DE LOS LINKS */
+    text-shadow: none;
+}
+
+/* PRINCIPAL */
+.principal {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #4b4a4a, #000000);
+    color: white;
+}
+
+/* ELEMENTOS DE PORTAFOLIO PARA QUE QUEDEN UNO AL LADO DEL OTRO */
+section {
+    display: flex; /* CONENEDORES ALINEADOS */
+    justify-content: center; /* CENTRADO DE ELEMENTOS */
+    align-items: center; /* ALINEA VERTICALMENTE AL CENTRO */
+    flex-wrap: wrap; /* PERMITE QUE LOS ELEMENTOS PASEN A LA SIGUIENTE LINEA */
+    gap: 10px; /* ESPACIO ENTRE LOS DIVS CON LAS IMAGENES */
+    padding: 20px; /* ESPACIO */
+    max-width: auto; /* LIMITA EL ANCHO DEL CONTENEDOR */
+    margin: 0 auto; /* CENTRAR EL SECTION */
+}
+
+section div {
+    flex: 1;
+    margin: 0; /* ELIMINA MARGEN */
+    background-color: transparent;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    box-sizing: border-box; /* Incluye padding y borde en el cálculo del ancho total */
+    max-width: 250px; /* LIMITA EL ANCHO Y DIV */
+}
+
+/* ESTILO DE LAS IMAGENES */
+section img {
+    width: 100%;
+    height: 200px; /* ALTURA FIJA */
+    object-fit: cover; /* MANTIENE LA PROPORCION DE LA IMAGEN */
+    border-radius: 10px; /* BORDES REDONDEADOS */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* SOMBRA */
+    margin: 0; /* SIN MARGEN */
+}
+
+/* ESTILO DE ENLACES */
+section a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 5px;
+    display: inline-block;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* CONTORNO */
+}
+
+section a:hover {
+    color: #fff;
+}
+
+/* PORTAFOLIO*/
+.tituloportafolio{
+    text-align: center;
+    margin-top: 20px;
+}
+.parrafoportafolio{
+    color: #000;
+    text-align: center;
+    background-color: #D9D9D9;
+    margin-top: 20px;
+    margin-left: 200px ;
+    margin-right: 220px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* CAJAS*/
+.contenedorflex{
+    display: flex;
+    justify-content:space-around;    
+} 
+
+.caja{
+    background-color: #D9D9D9;
+    width: 350px; height: 290px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-right: 220px;
+    flex-wrap: wrap;
+}
+.caja1{
+    background-color: #D9D9D9;
+    width: 350px; height: 290px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-left: 200px ;
+    margin-right: 220px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+/*IMAGEN EN CONSTRUCCION*/
+.Enconstruccion{
+    width: 270px; height: 200px;
+    box-sizing;
+    margin-left: 5px;
+    margin-right: 5px;  
+}
+/*IMAGEN EMPRESA*/
+.Enconstruccion1{
+    width: 270px; height: 200;
+}
+/*TEXTO DENTRO DE LA CAJA*/
+.construccion{
+    color: #000;
+    text-align: center;
+    font-size: small;
+    width: 270px;
+    margin-left: 25px;
+}
+.linkprototipo{
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+/*CAJA TECNOLOGIAS*/
+.cajatecnologias{
+    background-color: #D9D9D9;
+    margin-left: 200px;
+    margin-right: 220px;
+    padding: 20px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Ajuste de las imágenes para que sean responsive */
+.logos {
+    max-width: 100px; 
+    height: auto;
+}
+@media (max-width: 731px) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .logos {
+        flex-basis: calc(50% - 20px); 
+        max-width: 100px;
+    }
+
+}
+
+/* Para resolución de 768px (disposición de logos en una sola fila) */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+/* Para resolución de 400px (disposición en dos columnas: 2x2) */
+@media (max-width: 400px) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .logos {
+        flex-basis: calc(50% - 20px); 
+        max-width: 100px;
+    }
+}
+
+@media all and (max-width: 700px){ 
+    .parrafoportafolio{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 90%;
+        margin-left: 10px;
+    }
+    .contenedorflex{
+        flex-direction: column;
+        justify-content: center;
+        display: block;
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+    .caja1{
+        flex-direction: column;
+        margin-left: 10px;}
+    .construccion{
+        flex-direction: column;
+        width: 90%;
+    }
+    .cajatecnologias{
+        flex-direction: column;
+        width: 90%;
+        margin-left: 10px;
+        padding: 40px;
+        height: 300px;
+        justify-content: center;
+    }
+}
+
+/************************************************************ CONTACTO ****************************************************************************/
+ .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.box {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 18px;
+}
+
+
+
+/************************FORMULARIO DE CONTACTO********/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.box h2{
+
+    text-align: center;
+}
+/***************************** MAPA *************************************/
+
+.ubicacionOficina h2{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ubicacion-contenedor {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos en los extremos */
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    gap: 20px; /* Espacio entre el mapa y la información */
+    margin: 20px 0; /* Espacio superior e inferior */
+    width: 100%;
+}
+
+/* Estilo para el apartado de dirección y horarios */
+.direccion-horarios {
+    max-width: 35%; /* Tamaño máximo del contenedor de dirección */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.direccion-horarios h2 {
+    font-size: 24px;
+}
+
+.direccion-horarios p, .direccion-horarios ul {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.listadoHorarios{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* FOOTER */
+footer {
+    background-color: #4b4a4a;
+    color: #ffffff;
+    border-top: 1px solid #e81b1b;
+    padding: 20px 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Logo del footer */
+.logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo-footer img {
+    max-height: 60px;
+}
+
+.text-info {
+    text-align: center;
+}
+
+
+/*MENU HAMBURGUESA*/
+/* Ocultar el checkbox */
+.menu-checkbox {
+    display: none;
+}
+
+/* Estilo del botón de menú hamburguesa */
+.menu-button {
+    display: none; /* Oculto en pantallas grandes */
+    background: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px;
+    position: absolute;
+    right: 20px;
+    top: 30px; /* Ajusta la posición del botón hamburguesa */
+    height: 30px;
+}
+
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Mostrar el botón en pantallas pequeñas */
+    .menu-button {
+        display: block;
+    }
+
+    /* Ocultar el menú por defecto */
+    .nav {
+        display: none;
+    }
+
+    /* Mostrar el menú cuando el checkbox está marcado */
+    .menu-checkbox:checked + .menu-button + .nav {
+        display: block;
+        position: absolute;
+        top: 150px;
+        right: 0;
+        width: 100%;
+        background-color: white;
+    }
+
+    .listaNav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        margin-right: 30px;
+        background-color: #fff; /* Fondo del menú desplegable */
+    }
+
+    .linkNav {
+        margin: 10px 0;
+    }
+
+    .link {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+/*ajustes para pantalla contacto*/
+    .container {
+        display: flex;
+        flex-direction: column; /* Cambia a disposición vertical */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .box {
+        width: 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
+        margin-bottom: 20px; /* Añade espacio entre los elementos */
+    }
+
+    /* Ajustes para los inputs y formulario */
+    form input, form textarea {
+        width: 100%; /* Los inputs ocupan todo el ancho del contenedor */
+        font-size: 1rem; /* Ajusta el tamaño de los inputs */
+        margin-bottom: 10px; /* Espacio entre los campos */
+    }
+
+    form input[type="submit"] {
+        width: 100%; /* Botón de enviar ocupa el ancho completo */
+        padding: 10px; /* Ajusta el padding */
+    }
+
+    /*MAPA PANTALLA CONTACTO*/
+    .ubicacion-contenedor {
+        flex-direction: column; /* Cambia a disposición vertical en pantallas más pequeñas */
+        align-items: center; /* Centra los elementos */
+        gap: 20px;
+    }
+    .mapa iframe, .direccion-horarios {
+        width: 100%; /* Asegura que ambos elementos ocupen el 100% del ancho */
+        max-width: none; /* Evita limitaciones de ancho */
+    }
+/**************************** FOOTER **********************************************/
+.footer-content {
+    flex-direction: column; /* APILA TODO VERTICALEMNTE */
+    align-items: center; /* CENTRA TODO LOS ITEMS */
+    text-align: center; /* CENTRA EL TEXTO */
+}
+
+#derechos-reservados {
+    order: 1; /* MUEVE DERECHOS RESERVADOS A LA PRIMERA POSICIÓN */
+    margin-bottom: 10px; /* MARGEN DEL FONDO */
+}
+
+#materia {
+    order: 2; /* MUEVE DEBAJO DE DERECHOS RESERVADOS */
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+#curso {
+    order: 3; /* MUEVE A LA TERCERA POSICIÓN */
+    margin-left: 90px;
+    margin-right: 10px;
+}
+
+#grupo {
+    order: 3; /* SE MUEVE JUNTO A CURSO */
+    margin-bottom: 10px;
+    margin-right: 100px;
+}
+
+.logo-footer {
+    order: 4; /* MUEVE EL LOGO A LA ULTIMA POSICIÓN. */
+    margin-top:20px;
+}
+}
+
+
+/*MEDIA QUERYS PARA MOBILE DE TAMAÑO PREVISTO DE 400PX DE ANCHO*/
+
+/* Estilos para dispositivos móviles con un ancho máximo de 400px */
+@media (max-width: 400px) {
+
+    /* Ajusta la estructura del body para móviles */
+    .Body {
+        padding: 10px;
+    }
+
+    /* Header */
+    .Body .Header {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .Logo {
+        margin-top: 0;
+    }
+
+    .FotoPerfil {
+        width: 40px; /* Reduce el tamaño del perfil */
+        height: 40px;
+    }
+
+    span {
+        font-size: 18px; /* Reduce el tamaño de la fuente para el nombre */
+        margin-top: 10px;
+    }
+
+    /* Navegación */
+    .listaNav {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .linkNav {
+        margin: 0 10px; /* Reduce el margen de los enlaces de navegación */
+    }
+
+    /* Ajusta los tamaños de texto en todo el sitio */
+    .Main .Presentacion, 
+    .MainSM .PresentacionSM, 
+    .descripcion, 
+    .titulo2C, 
+    .ulSM {
+        font-size: 16px; /* Ajusta el tamaño del texto */
+    }
+
+    /* Ajustes en la sección de contacto */
+    .tipoContacto {
+        width: 100%; /* El formulario ocupará todo el ancho disponible en móviles */
+        padding: 20px;
+    }
+
+    .form-control, 
+    textarea.form-control {
+        font-size: 14px; /* Reduce el tamaño del texto en los inputs */
+        padding: 10px;
+    }
+
+    .form {
+        flex-direction: column;
+        align-items: center;
+    }
+    form input, form textarea {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+
+    /* Asegurar que los inputs ocupen todo el ancho */
+    form input, form textarea {
+        width: 100%; 
+    }
+
+    form input[type="submit"] {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    /*MAPA*/
+    .ubicacion-contenedor {
+        flex-direction: column;
+    }
+
+    .mapa iframe {
+        width: 100%; /* Asegurar que el mapa ocupe todo el ancho disponible */
+        height: 250px;
+    }
+
+  
+ /*************************************************************** FOOTER *******************************************************************************/
+
+    .Footer p {
+        font-size: 12px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+        line-height: 1.4;
+    }
+
+    .Footer img {
+        max-height: 30px; /* Ajusta el tamaño del logo en pantallas pequeñas */
+    }
+
+    /* Ajusta los iconos y enlaces en la sección de contacto */
+    .IconosC {
+        flex-direction: row; /* Alinea los iconos en fila para móviles */
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .link-contenido {
+        font-size: 14px; /* Reduce el tamaño del texto en los enlaces */
+    }
+
+    .icono {
+        width: 24px; /* Ajusta el tamaño del icono */
+        margin-right: 5px; /* Reduce el espacio entre el icono y el texto */
+    }
+}
+
+/*Servicios */
+
+.services {
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    width: 325px;
+    background-color: #d9d9d9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: hidden;
+    box-shadow: 8px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 16px;
+    background-color: #d9d9d9;
+}
+
+.card-content p {
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.card2 {
+    width: 325px;
+    background-color: #d9d9d9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: hidden;
+    box-shadow: 8px 2px 4px rgba(0,0,0,0.2);
+    margin: 80px;
+}
+
+.card-container2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.titulo {
+    text-align: center;
+    margin-top: 160px;
+    color: #000;
+
+}
+
+header {
+    position: fixed; /* PARA QUE SE MANTENGA ENCIMA*/
+    background-color: #000000;
+    padding: 20px;
+    width: 100%; /*PARA QUE OCUPE TODO EL ANCHO*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* UBICACION DEL LOGO IMG NAV */
+.logo {
+    height: 80px;
+    width: auto;
+    height: 80px;
+    width: auto;
+    margin-bottom: -70px;
+    margin-top: -30px;
+}
+
+/* ------OCULTAR EL MENU BURGUER POR DEFECTO--------- */
+.navbar-toggler {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* CONTENEDOR DE LOS LINKS */
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin-left: 320px;
+}
+
+/* EFECTOS DE LOS LINKS */
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* HOVER SOBRE LOS LINKS */
+.nav-links a:hover {
+    background-color: #ebecec;
+    border-radius: 10px;
+    color: #252424;
+    text-decoration: none;
+}
+
+/* ------RESPONSIVE PARA EL NAV IMG----------- */
+
+@media (max-width: 768px) {
+    /* MUESTRA EL MENU  HAMBURGUESA */
+
+    .navbar-toggler {
+        display: inline-block;
+        margin-left: 60px;
+        
+    }
+    
+    /* CAMBIA EL LAYOUT DE LOS LINKS */
+    .nav-links {
+        display: none; /* OCULTA LOS LINKS INICIALMENTE */
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 50;
+        width: 100%;
+        background-color: #000;
+    }
+    
+    .nav-links a {
+        padding: 15px;
+        margin: 0;
+        border-bottom: 1px solid #fff;
+    }
+    
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+    
+    /* MOSTRAR LOS LINKS CUANDO SE ACTIVA EL MENU BURGER */
+    .nav-links.show {
+        display: flex;
+        margin-left: -20px;
+    }
+
+    .logo {
+        margin-top: -70px;
+    }
+}
