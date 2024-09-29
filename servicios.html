@@ -3,46 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GRUPO 8</title>
-    <link rel="stylesheet" href="estilo2.css">
+    <title alt="Servicios">Servicios</title>
+    <link rel="stylesheet" href="estilo3.css">
+    <!--Bootstrap para el icono de menú -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <header>
-        <div>
-            <a class = "Logo" href="#"></a>
-            <img class="FotoPerfil" src="fotos/logo.png" alt="logo" height="100">
-        </div>
-        <!-- Checkbox oculto -->
-        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
-            
-        <!-- Botón de menú hamburguesa -->
-        <label for="menu-toggle" class="menu-button">
-            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-            </svg>
-        </label>
-        <nav class="nav">
-            <ul class="listaNav" >
-                <li class="linkNav">
-                    <a href="index.html">INICIO</a></li>
-                <li class="linkNav">
-                    <a href="about.html">NOSOTROS</a></li>
-                <li class="linkNav">
-                    <a href="servicios.html">SERVICIOS</a></li>
-                <li class="linkNav">
-                    <a href="portfolio.html">PORTAFOLIO</a></li>
-                <li class="linkNav">
-                    <a href="soporte.html">SOPORTE</a></li>
-                <li class="linkNav">
-                    <a href="contacto.html">CONTACTO</a></li>
-            </ul>
+         <nav>
+            <img src="fotos/logo.png" alt="logo" class="logo">
+            <!-- Botón de menú hamburguesa -->
+            <button class="navbar-toggler" type="button" id="menu-toggle">
+                <span class="navbar-toggler-icon">&#9776;</span> <!-- ícono de hamburguesa -->
+            </button>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">INICIO</a>
+                <a href="about.html">NOSOTROS</a>
+                <a href="servicios.html">SERVICIOS</a>
+                <a href="portfolio.html">PORTAFOLIO</a>
+                <a href="soporte.html">SOPORTE</a>
+                <a href="contacto.html">CONTACTO</a>
+            </div>
         </nav>
     </header>
     <main>
+        <br><h2 class="services">Nuestros Servicios</h2>
+
+        <div class="card-container">
+            <div class="card">
+                    <img src="graphic_design.jpg" class="card-image-top img-fit" alt="diseño grafico">
+                        <div class="card-content">
+                            <h3>Desarrollo Web Personalizado</h3>
+                            <p>
+                                Creamos sitios web adaptados a las necesidades de tu negocio, con un enfoque en la usabilidad y el diseño moderno. Utilizamos las últimas tecnologías para garantizar un rendimiento óptimo y una experiencia de usuario excepcional.
+                            </p>
+                        </div>
+            </div>
+
+            <div class="card">
+                <img src="IT.jpg" class="card-image-top img-fit" alt="diseño grafico">
+                    <div class="card-content">
+                        <h3>Consultoría en Soluciones IT</h3>
+                        <p>
+                            Ofrecemos asesoramiento experto para optimizar la infraestructura tecnológica de tu empresa. Desde la evaluación de sistemas actuales hasta la implementación de nuevas herramientas, te ayudamos a mejorar la eficiencia y seguridad.
+                        </p>
+                    </div>
+            </div>
+
+
+            <div class="card">
+                <img src="tech.jpg" class="card-image-top img-fit" alt="diseño grafico">
+                   <div class="card-content">
+                      <h3>Mantenimiento y Soporte Técnico</h3>
+                        <p>
+                            Brindamos soporte técnico continuo para asegurar que tu empresa funcione sin interrupciones. Nuestro equipo está disponible para resolver problemas técnicos, realizar actualizaciones y garantizar la estabilidad de tus sistemas.
+                        </p>
+                    </div>
+            </div>
+        </div>
+        
+        <h2 class="services">Nuestros Valores</h2>   
+
+        <div class="card-container2">
+            <div class="card2">
+                        <div class="card-content">
+                            <p>
+                                Nos comprometemos a ofrecer soluciones tecnológicas confiables, priorizando siempre la satisfacción del cliente.
+                            </p>
+                        </div>
+            </div>
+
+            <div class="card2">
+                <div class="card-content">
+                    <p>
+                        Creemos en la innovación y la transparencia para construir relaciones a largo plazo con nuestros clientes.
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer class="Footer">
-        <p class="TodosLosDerechos">&copy; 2024. Todos los derechos reservados.</p>
-    </footer>
+
+    <footer class="container-fluid py-3 mt-5">
+        <div class="footer-content">
+            <div class="text-info">
+                <p id="materia"><strong>Materia:</strong> Diseño y desarrollo Web &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="curso"><strong>Curso:</strong> 2688</span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="grupo"><strong>Grupo</strong> 8</span></p>
+                <p id="derechos-reservados">Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024</p>
+            </div>
+            <div class="logo-footer">
+                <img src="foto/uade-logo-min.png" alt="Logo">
+            </div>
+        </div>
+    </footer>  
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+        var navLinks = document.getElementById('nav-links');
+        navLinks.classList.toggle('show');
+    });
+</script>
 </body>
 </html>
-
