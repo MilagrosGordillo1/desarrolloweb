@@ -1,0 +1,340 @@
+/* GENERAL FUENTES - COLORES ETX */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+
+}
+
+
+/* --------HEADER MENU NAV - ESTILOS Y RESPONSIVE------------ */
+
+body {
+    font-family: Arial;
+    line-height: 1.6;
+    color: #000000;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.titulo {
+    text-align: center;
+    margin-top: 160px;
+    color: #000;
+
+}
+
+
+/* ESTILO DEL HEADER */
+header {
+    position: fixed; /* PARA QUE SE MANTENGA ENCIMA*/
+    background-color: #000000;
+    padding: 20px;
+    width: 100%; /*PARA QUE OCUPE TODO EL ANCHO*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* UBICACION DEL LOGO IMG NAV */
+.logo {
+    height: 80px;
+    width: auto;
+    height: 80px;
+    width: auto;
+    margin-bottom: -70px;
+    margin-top: -30px;
+}
+
+/* ------OCULTAR EL MENU BURGUER POR DEFECTO--------- */
+.navbar-toggler {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* CONTENEDOR DE LOS LINKS */
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin-left: 320px;
+}
+
+/* EFECTOS DE LOS LINKS */
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* HOVER SOBRE LOS LINKS */
+.nav-links a:hover {
+    background-color: #ebecec;
+    border-radius: 10px;
+    color: #252424;
+    text-decoration: none;
+}
+
+/* ------RESPONSIVE PARA EL NAV IMG----------- */
+
+@media (max-width: 768px) {
+    /* MUESTRA EL MENU  HAMBURGUESA */
+
+    .navbar-toggler {
+        display: inline-block;
+        margin-left: 60px;
+        
+    }
+    
+    /* CAMBIA EL LAYOUT DE LOS LINKS */
+    .nav-links {
+        display: none; /* OCULTA LOS LINKS INICIALMENTE */
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 50;
+        width: 100%;
+        background-color: #000;
+    }
+    
+    .nav-links a {
+        padding: 15px;
+        margin: 0;
+        border-bottom: 1px solid #fff;
+    }
+    
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+    
+    /* MOSTRAR LOS LINKS CUANDO SE ACTIVA EL MENU BURGER */
+    .nav-links.show {
+        display: flex;
+        margin-left: -20px;
+    }
+
+    .logo {
+        margin-top: -70px;
+    }
+}
+
+
+
+
+
+/* --------CAJAS IMG GENERAL Y RESPONSIVE---------- */
+.intro, .galeria, .texto {
+    background-color: #fff;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.intro h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.intro p {
+    flex: 1;
+    font-size: 1.1rem;
+    color: #000000;
+    margin: 0;
+}
+
+
+/* CAJA QUE CONTIENE IMG Y TEXTO */
+.contenedor {
+    display: flex; /* ELEMENTOS EN FILA*/
+    align-items: center; /* CENTRADO VERTICAL */
+    gap: 20px; /* ESPACIO ENTRE IMAGEN Y TEXTO*/
+    padding-top: 150px;
+    padding-bottom: 60px;
+}
+
+.contenedor img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover; /* AJUSTA LA IMAGEN EN EL CIRCULO */
+}
+
+.contenedor p {
+    flex: 1; /* EL TEXTO OCUPA EL ESPACIO RESTANTES*/
+    font-size: 1.1rem;
+    color: #000000;
+    margin: 0; /* QUITA MARGNES POR DEFECTO */
+}
+
+/* CAJA PARA LA PRIMERA GALERIA DE IMAGENES */
+.galeria {
+    background-color: #a7a7a7;
+    display: flex;
+    justify-content: center; /* Centra las imágenes */
+    align-items: center;
+    gap: 2rem; /* Espacio entre las imágenes */
+    padding: 2rem;
+    flex-wrap: nowrap; /* Evita que las imágenes se envuelvan en otra fila */
+}
+
+.imagen-circular {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 5px 6px 6px rgba(0, 0, 0, 0.8); /* SOMBRA GRADIENTE */
+    transition: transform 0.3s ease;
+}
+
+.imagen-circular:hover {
+    transform: scale(1.1);
+}
+
+.imagen-circular img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* AJUSTA LA IMAGEN */
+}
+
+
+
+/* --------RESPONSIVE IMG CAJAS.------------- */
+@media (max-width: 768px) {
+    .galeria {
+        flex-direction: row; /* Cambia a disposición vertical en pantallas pequeñas */
+        align-items: center; /* Centra los elementos verticalmente */
+    }
+
+    .galeria .imagen-circular {
+        max-width: auto;  /* Limita el ancho de la imagen al 100% del contenedor */
+        height: auto;     /* Mantiene la relación de aspecto de la imagen */
+        margin-bottom: 1rem; /* Espacio entre las imágenes */
+    }
+
+    .contenedor {
+        flex-direction: column; /* Cambia la disposición a vertical en pantallas pequeñas */
+        text-align: center; /* Centra el texto en pantalla pequeña */
+    }
+
+    .contenedor img {
+        margin-bottom: 1rem; /* ESPACIO ENTRE LA IMAGEN Y TEXTO */
+        
+    }
+
+    
+}
+
+
+
+/*PARA FOOTER*/
+/* ESTILO GENERAL!! */
+footer {
+    color: #fff;
+    background-color: #4b4a4a;
+    border-top: 1px solid #e81b1b;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+/* CONTENIDO EN VISTA PANTALLA COMPLETA */
+.footer-content {
+    display: flex;
+    justify-content: center; /* CENTRA LOS ELEMENTOS */
+    align-items: center; /* ALINEA VERTICALMENTE LOS ELEMENTOS */
+    padding: 10px 20px;
+    gap: 10px; /* EL ESPACIO ENTRE LOS ELEMENTOS */
+    flex-wrap: nowrap;
+}
+
+/* ESTILOS DE TEXTOS */
+.text-info {
+    display: flex;
+    flex-direction: column; /* APILAS LAS LINEAS VERTICALES */
+    align-items: center; /* CENTRA EL TEXTO */
+    margin-right: 20px; /* ESPACIO ENTRE EL TEXTO Y LOGO */
+}
+
+p {
+    color: #f7f7f7;
+}
+
+.materia {
+    margin: 0 30px 0 0; /* MARGEN QUE SEPARA DE #CURSO */
+}
+
+.curso, .grupo {
+    margin: 0 15px; /* MARGEN QUE SEPARA AMBOS */
+}
+
+#derechos-reservados {
+    margin: 10px 0 0 0; /* SEPARACION ENTRE LAS LINEAS */
+}
+
+/* PARA EL LOGO */
+.logo-footer {
+    max-height: 60px;
+}
+
+.logo-footer img {
+    max-height: 60px;
+}
+
+/*-------- ESTILOS RESPONSIVOS PARA EL FOOTER -------------*/
+@media (max-width: 790px) {
+    .footer-content {
+        flex-direction: column; /* APILA TODO VERTICALEMNTE */
+        align-items: center; /* CENTRA TODO LOS ITEMS */
+        text-align: center; /* CENTRA EL TEXTO */
+    }
+    
+    #derechos-reservados {
+        order: 1; /* Mueve Derechos Reservados a la primera posición */
+        margin-bottom: 20px; /* Margen inferior */
+        text-align: center; /* Centra el texto */
+    }
+    
+    #materia {
+        order: 2; /* Mantiene debajo de Derechos Reservados */
+        display: inline-block; /* Los coloca en la misma línea */
+        text-align: left; /* Centra el texto */
+        margin-left: 60px;
+
+    }
+    
+    #curso, #grupo {
+        order: 3; /* Mueve curso y grupo a la tercera posición */
+        display: inline-block; /* Los coloca en la misma línea */
+        text-align: left; /* Centra el texto */
+        margin: 3px;
+        margin-right: 60px;
+        margin-top: 30px;
+    }
+
+    .logo-footer {
+        order: 4; /* Mueve el logo al final */
+        margin-top: 10px;
+        text-align: center; /* Centra el logo */
+        margin-left: -15px;
+    }
+}
