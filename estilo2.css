@@ -238,15 +238,33 @@ form input[type="submit"]:hover {
 /* FOOTER */
 footer {
     background-color: #4b4a4a;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin: 0; /* DISTANCIA */
-    position: relative; 
-    margin-top: auto;
-    width: auto;
+    color: #ffffff;
+    border-top: 1px solid #e81b1b;
+    padding: 20px 0;
+    width: 100%;
 }
 
+footer p {
+    margin: 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Logo del footer */
+.logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo-footer img {
+    max-height: 60px;
+}
+
+.text-info {
+    text-align: center;
+}
 
 
 /*MENU HAMBURGUESA*/
@@ -344,6 +362,40 @@ footer {
         width: 100%; /* Asegura que ambos elementos ocupen el 100% del ancho */
         max-width: none; /* Evita limitaciones de ancho */
     }
+/**************************** FOOTER **********************************************/
+.footer-content {
+    flex-direction: column; /* APILA TODO VERTICALEMNTE */
+    align-items: center; /* CENTRA TODO LOS ITEMS */
+    text-align: center; /* CENTRA EL TEXTO */
+}
+
+#derechos-reservados {
+    order: 1; /* MUEVE DERECHOS RESERVADOS A LA PRIMERA POSICIÓN */
+    margin-bottom: 10px; /* MARGEN DEL FONDO */
+}
+
+#materia {
+    order: 2; /* MUEVE DEBAJO DE DERECHOS RESERVADOS */
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+#curso {
+    order: 3; /* MUEVE A LA TERCERA POSICIÓN */
+    margin-left: 90px;
+    margin-right: 10px;
+}
+
+#grupo {
+    order: 3; /* SE MUEVE JUNTO A CURSO */
+    margin-bottom: 10px;
+    margin-right: 100px;
+}
+
+.logo-footer {
+    order: 4; /* MUEVE EL LOGO A LA ULTIMA POSICIÓN. */
+    margin-top:20px;
+}
 }
 
 
@@ -439,10 +491,16 @@ footer {
         height: 250px;
     }
 
-    /* Footer */
-    .Footer {
-        padding: 10px 0;
-        font-size: 12px; /* Reduce el tamaño del texto del footer */
+  
+ /*************************************************************** FOOTER *******************************************************************************/
+
+    .Footer p {
+        font-size: 12px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+        line-height: 1.4;
+    }
+
+    .Footer img {
+        max-height: 30px; /* Ajusta el tamaño del logo en pantallas pequeñas */
     }
 
     /* Ajusta los iconos y enlaces en la sección de contacto */
