@@ -1,48 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GRUPO 8</title>
-    <link rel="stylesheet" href="estilo2.css">
+    <title alt="Contacto">Contacto</title>
+    <link rel="shotcut icon" href="../sensible.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilo2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script defer src="../js/app.js"></script>
 </head>
+
 <body>
     <header>
         <div>
-            <a class = "Logo" href="#"></a>
-            <img class="FotoPerfil" src="fotos/logo.png" alt="logo" height="100">
+            <a class="Logo" href="../index.html">
+                <img class="FotoPerfil" src="../fotos/logo.png" alt="logo" height="100">
+            </a>
         </div>
         <!-- Checkbox oculto -->
         <input type="checkbox" id="menu-toggle" class="menu-checkbox">
-            
+
         <!-- Botón de menú hamburguesa -->
         <label for="menu-toggle" class="menu-button">
-            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
             </svg>
         </label>
         <nav class="nav">
-            <ul class="listaNav" >
+            <ul class="listaNav">
                 <li class="linkNav">
-                    <a href="index.html">INICIO</a></li>
+                    <a href="../index.html">INICIO</a>
+                </li>
                 <li class="linkNav">
-                    <a href="about.html">NOSOTROS</a></li>
+                    <a href="./about.html">NOSOTROS</a>
+                </li>
                 <li class="linkNav">
-                    <a href="servicios.html">SERVICIOS</a></li>
+                    <a href="./servicios.html">SERVICIOS</a>
+                </li>
                 <li class="linkNav">
-                    <a href="portfolio.html">PORTAFOLIO</a></li>
+                    <a href="./portfolio.html">PORTAFOLIO</a>
+                </li>
                 <li class="linkNav">
-                    <a href="soporte.html">SOPORTE</a></li>
+                    <a href="./soporte.html">SOPORTE</a>
+                </li>
                 <li class="linkNav">
-                    <a href="contacto.html">CONTACTO</a></li>
+                    <a class="active" href="#">CONTACTO</a>
+                </li>
             </ul>
         </nav>
     </header>
+
     <main>
+
+
+        <div class="container">
+            <!-- Contacto -->
+            <div class="box contact-info">
+                
+                <h2>Contacto</h2>
+            
+                <p><strong>Teléfono:</strong> +54 11 1234-5678</p>
+                <p><strong>Email:</strong> advancedit@uade.com.ar</p>
+            </div>
+
+            <!-- Formulario de Contacto -->
+            <div class="box">
+                <h2>Consultas</h2>
+                <form action="#">
+                    <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+                    <input type="email" name="email" placeholder="Correo Electronico" required>
+                    <input type="email" name="email" placeholder="Telefono" required>
+                    <textarea name="mensaje" rows="5" placeholder="Consulta" required></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+
+            <div class="ubicacion-contenedor">
+                <h2 >Nuestra Oficina</h2>
+                <!-- Mapa -->
+                <div class="mapa">
+                 
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13133.90890618887!2d-58.3818095!3d-34.6173786!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1a2dc24cbca665a7!2sUADE!5e0!3m2!1ses-419!2sar!4v1677020927155!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            
+                <!-- Apartado de dirección y horarios de atención -->
+                <div class="direccion-horarios">
+                    <p><strong>Dirección:</strong> Lima 775, Buenos Aires, Argentina</p>
+                    <p><strong>Horarios de Atención:</strong></p>
+                    <ul class="listadoHorarios">
+                        <li>Lunes a Viernes: 9:00 AM - 6:00 PM</li>
+                        <li>Sábado: 9:00 AM - 1:00 PM</li>
+                        <li>Domingo: Cerrado</li>
+                    </ul>
+                </div>
+            </div>
     </main>
-    <footer class="Footer">
-        <p class="TodosLosDerechos">&copy; 2024. Todos los derechos reservados.</p>
+
+    <!-- Footer -->
+    <footer class="container-fluid text-dark py-3 mt-5">
+        <div class="footer-content">
+            <div class="text-info">
+                <p id="materia"><strong>Materia:</strong> Diseño y desarrollo Web &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="curso"><strong>Curso:</strong> 2688</span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="grupo"><strong>Grupo</strong> 8</span></p>
+                <p id="derechos-reservados">Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024</p>
+            </div>
+
+            <div class="logo-footer">
+                <img src="../fotos/uade-logo-min.png" alt="UADE Logo">
+            </div>
+        </div>
     </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
 
