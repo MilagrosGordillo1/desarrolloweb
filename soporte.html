@@ -4,45 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GRUPO 8</title>
-    <link rel="stylesheet" href="estilo2.css">
+    <link rel="stylesheet" href="estilo3.css">
+    <!--Bootstrap para el icono de menú -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <header>
-        <div>
-            <a class = "Logo" href="#"></a>
-            <img class="FotoPerfil" src="fotos/logo.png" alt="logo" height="100">
-        </div>
-        <!-- Checkbox oculto -->
-        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
-            
-        <!-- Botón de menú hamburguesa -->
-        <label for="menu-toggle" class="menu-button">
-            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-            </svg>
-        </label>
-        <nav class="nav">
-            <ul class="listaNav" >
-                <li class="linkNav">
-                    <a href="index.html">INICIO</a></li>
-                <li class="linkNav">
-                    <a href="about.html">NOSOTROS</a></li>
-                <li class="linkNav">
-                    <a href="servicios.html">SERVICIOS</a></li>
-                <li class="linkNav">
-                    <a href="portfolio.html">PORTAFOLIO</a></li>
-                <li class="linkNav">
-                    <a href="soporte.html">SOPORTE</a></li>
-                <li class="linkNav">
-                    <a href="contacto.html">CONTACTO</a></li>
-            </ul>
+        <nav>
+            <img src="foto/logo.png" alt="logo" class="logo">
+            <!-- Botón de menú hamburguesa -->
+            <button class="navbar-toggler" type="button" id="menu-toggle">
+                <span class="navbar-toggler-icon">&#9776;</span> <!-- ícono de hamburguesa -->
+            </button>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">INICIO</a>
+                <a href="about.html">NOSOTROS</a>
+                <a href="servicios.html">SERVICIOS</a>
+                <a href="portfolio.html">PORTAFOLIO</a>
+                <a href="soporte.html">SOPORTE</a>
+                <a href="contacto.html">CONTACTO</a>
+            </div>
         </nav>
     </header>
     <main>
+        <h1 class="titulo">Nuestros servicios de soporte.</h1>
+        <section class="intro">
+            <p>Ofrecemos un servicio de soporte integral de software diseñado para garantizar el funcionamiento eficiente y continuo de tus aplicaciones y sistemas.<br><br>
+                Nuestro equipo de expertos está disponible para brindarte asistencia personalizada, responder tus consultas y ofrecerte soluciones rápidas y efectivas.</p>
+        </section><br>>
+        
+        <section class="galeria">
+            <div class="imagen-circular">
+                <a href="#mesa">
+                    <img src="foto/mesa.png" alt="Imagen 1">
+                </a>
+            </div>
+            <div class="imagen-circular">
+                <a href="#remoto">
+                    <img src="foto/remoto.png" alt="Imagen 2">
+                </a>
+            </div>
+            <div class="imagen-circular">
+                <a href="#onsite">
+                    <img src="foto/onsite.png" alt="Imagen 3">
+                </a>
+            </div>
+        </section>
+
+        <section class="intro">
+
+            <div class="contenedor" id="mesa">
+                <img src="foto/mesa.png" alt="mesadeayuda">
+                <p>Contamos con equipo de profesionales capacitados que actúan como el primer punto de contacto para resolver problemas técnicos y responder consultas.<br>
+                Brindamos asistencia rápida y efectiva, guiando a los usuarios en la solución de incidencias con software, y acceso a sistemas, 
+                asegurando una experiencia fluida y minimizando interrupciones en las operaciones diarias.</p>
+            </div>
+
+            <div class="contenedor" id="remoto">
+                <img src="foto/remoto.png" alt="remoto">
+                <p>Nuestro servicio eficiente permite a nuestros especialistas conectarse a tus dispositivos desde cualquier lugar para solucionar problemas técnicos.<br> 
+                   Este tipo de servicio es ideal para resolver fallos de software, configuraciones o actualizaciones sin la necesidad de desplazamientos, 
+                   lo que garantiza respuestas rápidas y minimiza tiempos de inactividad.</p>
+            </div>
+
+            <div class="contenedor" id="onsite">
+                <img src="foto/onsite.png" alt="onsite">
+                <p>Contamos con profesionales que se trasladan directamente al lugar donde se encuentre del cliente para brindar asistencia técnica personalizada.<br> 
+                    Este servicio es ideal para resolver problemas complejos de hardware, realizar instalaciones, configuraciones de redes o mantenimiento preventivo, 
+                    ofreciendo una atención cercana y adaptada a las necesidades específicas del entorno.</p>
+            </div>
+            <br><br><br><br><br><br>
+        </section>
+
     </main>
-    <footer class="Footer">
-        <p class="TodosLosDerechos">&copy; 2024. Todos los derechos reservados.</p>
-    </footer>
+    <footer class="container-fluid py-3 mt-5">
+        <div class="footer-content">
+            <div class="text-info">
+                <p id="materia"><strong>Materia:</strong> Diseño y desarrollo Web &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="curso"><strong>Curso:</strong> 2688</span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="grupo"><strong>Grupo</strong> 8</span></p>
+                <p id="derechos-reservados">Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024</p>
+            </div>
+            <div class="logo-footer">
+                <img src="foto/uade-logo-min.png" alt="Logo">
+            </div>
+        </div>
+    </footer>  
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+        var navLinks = document.getElementById('nav-links');
+        navLinks.classList.toggle('show');
+    });
+</script>
 </body>
 </html>
 
