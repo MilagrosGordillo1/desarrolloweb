@@ -29,7 +29,8 @@ header {
     display: flex; /* FLEX PARA ALINEAR LOS ELEMENTOS */
     justify-content: space-between; /* SEPARA EL LOGO DEL RESTO DE ELEMNTOS DE NAV*/
     align-items: center; /* ALINEA VERTICALMENTE */
-    
+    position: fixed;
+    width: 100%;  
 }
 
 /* EL LOGO */
