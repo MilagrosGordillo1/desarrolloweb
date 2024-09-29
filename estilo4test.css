@@ -39,26 +39,43 @@ header .logo {
 }
 
 /* ESTILO DEL NAV */
-nav {
-    display: flex; /* ALINEA LOS ELEMENTOS DENTRO DEL NAV */
-    justify-content: center; /* CENTRAR LOS ENLACES */
+/* ------OCULTAR EL MENU BURGUER POR DEFECTO--------- */
+.navbar-toggler {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* CONTENEDOR DE LOS LINKS */
+.nav-links {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    width: 60%;
+    margin-left: 320px;
 }
 
-.listaNav {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+/* EFECTOS DE LOS LINKS */
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    font-weight: bold;
 }
 
-.linkNav {
-    display: flex;
-    list-style-type: none;
-    justify-content:flex-end;
-    margin: 0 50px;
+/* HOVER SOBRE LOS LINKS */
+.nav-links a:hover {
+    background-color: #ebecec;
+    border-radius: 10px;
+    color: #252424;
+    text-decoration: none;
 }
-
 /*ENLACES*/
 
 nav a {
