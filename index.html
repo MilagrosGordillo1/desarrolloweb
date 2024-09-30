@@ -3,46 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GRUPO 8</title>
-    <link rel="stylesheet" href="estilo2.css">
+    <title alt="Inicio">AdvancedItSolutions</title>
+    <link rel="shotcut icon" href="./sensible.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/estilo2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="./js/app.js"></script>
+    
 </head>
 <body>
     <header>
-        <div>
-            <a class = "Logo" href="#"></a>
+        <!-- Logo -->
+        <a class="Logo" href="#">
             <img class="FotoPerfil" src="fotos/logo.png" alt="logo" height="100">
-        </div>
+        </a>
+    
         <!-- Checkbox oculto -->
         <input type="checkbox" id="menu-toggle" class="menu-checkbox">
-            
-        <!-- Botón de menú hamburguesa -->
+    
+        <!-- Botón hamburguesa -->
         <label for="menu-toggle" class="menu-button">
             <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
             </svg>
         </label>
-        <nav class="nav">
-            <ul class="listaNav" >
-                <li class="linkNav">
-                    <a href="index.html">INICIO</a></li>
-                <li class="linkNav">
-                    <a href="about.html">NOSOTROS</a></li>
-                <li class="linkNav">
-                    <a href="servicios.html">SERVICIOS</a></li>
-                <li class="linkNav">
-                    <a href="portfolio.html">PORTAFOLIO</a></li>
-                <li class="linkNav">
-                    <a href="soporte.html">SOPORTE</a></li>
-                <li class="linkNav">
-                    <a href="contacto.html">CONTACTO</a></li>
+        <!-- Navegación -->
+        <nav class="nave">
+            <ul class="listaNav">
+                <li class="linkNav"><a class="active" href="#">INICIO</a></li>
+                <li class="linkNav"><a href="./Paginas/about.html">NOSOTROS</a></li>
+                <li class="linkNav"><a href="./servicios.html">SERVICIOS</a></li>
+                <li class="linkNav"><a href="./portfolio.html">PORTAFOLIO</a></li>
+                <li class="linkNav"><a href="./soporte.html">SOPORTE</a></li>
+                <li class="linkNav"><a href="./contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="container_main_index">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Bienvenidos a Advanced IT Solutions</h1>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-center">
+                <p>
+                    Somos una empresa especializada en ofrecer soluciones tecnológicas innovadoras, desde el desarrollo web hasta la consultoría IT. 
+                    
+                    Nuestra misión es simplificar y optimizar los procesos tecnológicos para que nuestros clientes puedan enfocarse en lo que realmente importa: el crecimiento de su negocio.
+                </p>
+                <button class="btn btn-primary mt-3" onclick="window.location.href='./Paginas/contacto.html'">Contáctanos</button>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <img src="./fotos/fotoindex.jpg" class="img-fluid" alt="Foto de index main">
+            </div>
+        </div>
     </main>
-    <footer class="Footer">
-        <p class="TodosLosDerechos">&copy; 2024. Todos los derechos reservados.</p>
+    <footer class="footer_index container-fluid text-dark py-3 mt-5">
+        <div class="row align-items-center row_index0">
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-4 text-center text-md-start row_index1">
+                        <p class="mb-0"><strong>Materia:</strong> Diseño y Desarrollo Web</p>
+                    </div>
+                    <div class="col-md-4 text-md-end row_index2">
+                        <p class="mb-0"><strong>Curso:</strong> 480939</p>
+                    </div>
+                    <div class="col-md-4 text-center text-md-end row_index3">
+                        <p class="mb-0"><strong>Grupo:</strong> 08</p>
+                    </div>
+                </div>
+                <div class="row align-items-center mt-3 row_index4">
+                    <div class="col-md-12 text-md-">
+                        <p class="mb-0">Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 logo-footer row_index5">
+                <img src="./fotos/uade-logo-min.png" alt="UADE Logo">
+            </div>
+        </div>
     </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
