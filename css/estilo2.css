@@ -508,41 +508,84 @@ img.img-fluid {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /* Estilos específicos para mobile en la página de "Nosotros" */
 @media (max-width: 768px) {
+    .footer_nosotros{
+        height: auto;
+    }
     /* Cambiar el orden de los elementos en mobile */
     .footer_nosotros .row_nosotros0 {
         display: flex;
         flex-direction: column; /* Alinear en columna */
         text-align: center;
     }
+    .footer_nosotros .row {
+        margin-left: 20px;
+    }
 
     /* Bloque "Todos los derechos reservados" primero */
-    .footer_nosotros .row_nosotros3 {
-        order: 1; /* Mostrar primero */
+    .footer_nosotros .row_nosotros0 .row_nosotros3 {
+        order: 1 !important; /* Mostrar primero */
         margin-bottom: 10px;
     }
 
     /* Bloque "Materia" en segundo lugar */
-    .footer_nosotros .row_nosotros1 {
+    .footer_nosotros .row_nosotros0 .row_nosotros1 {
         order: 2; /* Mostrar segundo */
         margin-bottom: 10px;
     }
 
     /* Bloques "Curso" y "Grupo" en tercer lugar */
-    .footer_nosotros .row_nosotros2 {
+    .footer_nosotros .row_nosotros0 .row_nosotros2 {
         order: 3; /* Mostrar tercero */
-        margin-bottom: 10px;
+        display: inline-block;
+        width: 50%; 
+        text-align: center; 
+        margin-bottom: 5px;
+        margin-top: 10px;
     }
 
     /* Logo en el último lugar */
-    .footer_nosotros .row_nosotros4 {
+    .footer_nosotros .row_nosotros0 .row_nosotros4 {
         order: 4; /* Mostrar último */
         margin-top: 20px; /* Añadir espacio superior */
         text-align: center; /* Centrar el logo */
+        width: 100%;
+        margin-left: -25px;
+        margin-right: 20px;
+    }
+
+    /* Estilo para el logo */
+    .footer_nosotros .logo-footer {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .footer_nosotros .logo-footer img {
+        max-height: 50px;
+        align-self: center; /* Centra el logo verticalmente */
+    }
+
+    .footer_nosotros p {
+        font-size: 14px;
+        margin: 5px 0;
+        text-align: center; 
     }
     
 }
+
 
 
 
