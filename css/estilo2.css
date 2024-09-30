@@ -399,6 +399,13 @@ img.img-fluid {
 
 
 
+
+
+
+
+
+
+
 /*NOSOTROS*/
 /* Estilo del main de la página Nosotros */
 .container_main_nosotros {
@@ -409,6 +416,7 @@ img.img-fluid {
     height: auto;
     width: 100%;
     background: white;
+    
 }
 
 /* Estilo del título */
@@ -416,6 +424,7 @@ img.img-fluid {
     margin-bottom: 10px; /* Añadir un margen inferior para separar el título de las imágenes */
     font-size: 36px; /* Tamaño del título */
     color: rgb(0, 0, 0); /* Color del título */
+    
 }
 
 
@@ -432,24 +441,27 @@ img.img-fluid {
     max-width: 1500px; /* Limitar el ancho máximo */
     margin: 0 auto; /* Centrar el contenedor horizontalmente */
     flex-wrap: nowrap; /* Evita que las imágenes se envuelvan a la siguiente línea */
+    overflow: visible; /* Asegura que nada se oculte */
+    
 }
+
 
 /* Cada div dentro de la fila */
 .row_nosotros div {
     flex-shrink: 0; /* Evitar que los divs se reduzcan de tamaño */
     text-align: center;
-    width: 200px; /* Mantener todas las imágenes con el mismo ancho */
+
 }
 
-/* Estilo de las imágenes */
 .row_nosotros img {
-    width: 200px; /* Aumentar el ancho de las imágenes */
-    height: auto; /* Dejar que la altura se ajuste proporcionalmente */
-    aspect-ratio: 3 / 4; /* Mantener una proporción 3:4 para las imágenes */
-    object-fit: cover; /* Recortar la imagen si es necesario, pero sin deformarla */
-    border-radius: 10px; /* Bordes redondeados uniformes */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 135px !important;
+    height: 135px !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 !important;
 }
+
 
 /* Estilo de los enlaces debajo de las imágenes */
 .row_nosotros a {
@@ -465,6 +477,16 @@ img.img-fluid {
 .row_nosotros a:hover {
     color: #ebecec;
 }
+
+
+
+
+
+
+
+
+
+
 
 /* Media query para pantallas móviles */
 @media (max-width: 768px) {
